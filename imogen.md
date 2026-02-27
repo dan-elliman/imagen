@@ -62,3 +62,40 @@ def process_video_batch(batch):
 
 # Shutdown Ray
 ray.shutdown()
+
+## Optimizing Model Training with Ray
+
+For model training, Ray’s distributed framework enables Imagen to optimize GPU usage by balancing workloads to prevent contention and underutilization. Ray’s scheduling mechanisms dynamically allocate resources, ensuring efficient GPU utilization — even during peak loads.
+
+---
+
+## Accelerating Experimentation with Anyscale
+
+Anyscale complements Ray by providing a managed, scalable compute platform. It abstracts infrastructure complexity, allowing engineers to focus on experimentation and model development rather than resource management.
+
+Anyscale’s seamless integration with Ray ensures that experiments can be quickly scaled, tested, and deployed — significantly shortening the cycle from experimentation to production. This capability is especially critical as Imagen adapts to the demands of video processing and multi-modal data.
+
+---
+
+## Next Steps for Imagen
+
+To successfully transition to video workloads, Imagen can take the following steps:
+
+1. **Evaluate Ray and Anyscale**  
+   Assess how Ray and Anyscale fit current video processing and model training workloads.
+
+2. **Launch a Pilot Project**  
+   Process a subset of video data using Ray’s distributed capabilities to validate performance and scalability.
+
+3. **Scale Up**  
+   Expand the solution to handle full-scale video workloads based on pilot results.
+
+4. **Optimize Resource Utilization**  
+   Continuously monitor and adjust resource allocation to ensure optimal GPU efficiency.
+
+5. **Iterate and Improve**  
+   Leverage insights from Ray and Anyscale to accelerate iteration cycles, improve model performance, and reduce time to production.
+
+---
+
+By adopting these steps, Imagen can smoothly transition to video, using distributed AI to reduce friction between data processing and model training while maximizing resource efficiency.
