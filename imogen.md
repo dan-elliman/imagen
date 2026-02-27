@@ -62,6 +62,7 @@ def process_video_batch(batch):
 
 # Shutdown Ray
 ray.shutdown()
+```
 
 ## Optimizing Model Training with Ray
 
